@@ -1,0 +1,374 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body {
+  font-family: 'Noto Sans Japanese', sans-serif;
+  color: #2b2b2b;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  /*font-family:  'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;*/
+  /*"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;*/
+}
+
+
+
+#header #navi {
+  transition: all .6s;
+  overflow-y: auto;
+  padding-top: 40px;
+  width: 300px;
+  height: 100vh;
+  z-index: 200;
+  top: 0;
+  right: -320px;
+  background-color: #fff;
+  position: fixed;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+}
+
+/*.map-logo {
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 15%;
+}*/
+
+.tel-logo {
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 15%;
+}
+
+.top-logo {
+  padding-top: 5px;
+  width: auto;
+  height: 80%;
+  /* スマホのみmargin-left: 20%;*/
+}
+
+ul {
+  list-style: none;
+}
+
+.navi li {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.navi a {
+  font-family: 'Crimson Text', serif;
+  color: black;
+  text-decoration: none;
+}
+
+#header .nav_btn {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  margin-top: 15px;
+  z-index: 300;
+  top: 7px;
+  right: 7px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.hamburger_line {
+  transition: all .6s;
+  width: 34px;
+  height: 2px;
+  left: 5px;
+  background-color: #000;
+  position: absolute;
+}
+
+.hamburger_line1 { top: 10px; }
+.hamburger_line2 { top: 21px; }
+.hamburger_line3 { top: 32px; }
+
+.nav_bg {
+  opacity: 0;
+  transition: all .6s;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  background-color: #000;
+  cursor: pointer;
+  position: fixed;
+}
+
+/* 表示された時用のCSS */
+.nav_open #header #navi { right: 0; }
+
+.nav_open .nav_bg {
+  opacity: .8;
+  visibility: visible;
+}
+
+.nav_open .hamburger_line1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+
+.nav_open .hamburger_line2 {
+  width: 0;
+  left: 50%;
+}
+
+.nav_open .hamburger_line3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+
+.top-image img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+h2 {
+  /*font-family: 'Rock Salt', cursive;*/
+  /*font-family: 'Great Vibes', cursive;*/
+  /*font-family: 'Sorts Mill Goudy', serif;*/
+  /*font-family: 'Alegreya Sans SC', sans-serif;*/
+  font-family: 'Josefin Sans', sans-serif;
+
+  /*font-family: 'Pathway Gothic One', sans-serif;*/
+}
+
+.concept {
+  background-color: beige;
+  height: 350px;
+}
+
+.concept h2,p{
+  text-align: center;
+
+}
+
+.concept h2 {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.btn-flat-simple {
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 120px;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #ffffff;
+  background: #63513b;
+  transition: .4s;
+}
+
+
+.btn-flat-simple:hover {
+  background: #63513b;
+  color: #fff;
+}
+
+ .fadein {
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 1s;
+} 
+
+.style {
+  height: auto;
+  width: 100%;
+}
+
+.style h2 {
+  padding-top: 50px;
+  text-align: center;
+}
+.style img {
+  width: 50%;
+  height: 50%;
+}
+
+.staff {
+  background-color: beige;
+  height: auto;
+}
+
+.staff h2,p{
+  text-align: center;
+
+}
+
+.staff h2 {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.staff img {
+  width: 50%;
+  height: auto;
+  /* スマホのときのみ使用padding-left: 50px;
+  padding-top: 20px;*/
+}
+
+.staff-card {
+  height: 200px;
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 30px;
+  background-color: white;
+}
+
+.staff-card-wrapper1, .staff-card-wrapper2 {
+  display: flex;
+}
+
+.name-a {
+  color: #715c1f;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.product {
+  background-color: beige;
+}
+
+.product h2,p{
+  text-align: center;
+
+}
+.product h2 {
+  padding-top: 50px;
+}
+
+.product p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.product img {
+  width: 100%;
+}
+
+.news {
+  padding-top: 50px;
+}
+
+.news-left {
+  float: left;
+}
+
+.news-right {
+  float: right;
+}
+
+.news-text {
+  clear: both;
+}
+.news-box {
+    width: 55px;
+    height: 15px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #2c2c2f;
+    background: gray;/*背景色*/
+}
+
+
+.news {
+  background-color: beige;
+  padding-bottom: 30px;
+}
+
+.news h2 {
+  margin-bottom: 20px;
+}
+
+
+.news h2,p{
+  text-align: center;
+
+}
+.news-box p {
+    color: white;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.news-right p {
+    margin-right: 300px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+
+.news-text{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.news-text a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.access h2,h3,p{
+  text-align: center;
+
+}
+
+.access h3 {
+  text-align: left;
+}
+
+.access h2 {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.table {
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+table{
+  width: 100%;
+  border-spacing: 0;
+}
+
+table th{
+  border-bottom: solid 2px #ddd;
+  padding: 10px 0;
+}
+
+table td{
+  border-bottom: solid 2px #ddd;
+  text-align: center;
+  padding: 10px 0;
+}
+
+iframe {
+    width: 90%;
+    height: auto;
+    padding-left: 30px;
+  }
+

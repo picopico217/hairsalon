@@ -1,0 +1,80 @@
+@media screen and (max-width:875px){
+	.navbar-contents{
+		display: none;
+	}
+
+	.top-icon {
+		width: 150px;
+	}
+
+	.top-icon i{
+		color: #63513b;
+		padding-top: 40px;
+		padding-left: 5vh;
+	}
+
+	.top-logo {
+		width: 200px;
+		text-align: center;
+	}
+
+	.top-logo img {
+		padding-top: 8px;
+		width: 30%;
+		height: 90%;
+	}
+
+	.top-image-pc {
+		display: none;
+	}
+
+	.concept-head {
+		display: none;
+	}
+
+	.concept-left img {
+		display: none;
+	}
+
+	.style {
+		padding-bottom: 50px;
+	}
+
+	.style-card {
+		text-align: center;
+		padding-top: 50px;
+	}
+
+	.staff {
+		padding-bottom: 50px;
+	}
+
+
+	.staff img {
+  		padding: 10px 0;
+}
+
+	}
+
+	.staff-card-wrapper1, .staff-card-wrapper2 {
+		/*margin: 0 10vh;*/
+	}
+
+	.staff-card {
+		text-align: center;
+
+	}
+
+	.product {
+		background-color: white;
+		padding-bottom: 50px;
+	}
+
+	iframe {
+    width: 90%;
+    height: 60vh;
+    padding-left: 30px;
+  }
+
+
+}

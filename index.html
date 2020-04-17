@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>hair salon repos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="pc_style.css">
+	<link rel="stylesheet" type="text/css" href="sp_style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div id="header" class="header">
+	<div class="icon">
+	<div class="top-icon">
+		<a href="#"><i class="fas fa-map-marker-alt"></i></a>
+		<a href="#"><i class="fas fa-phone"></i></a>
+	</div>
+	</div>
+	<!--<img src="images/tel.png" class="tel-logo">-->
+	<div class="top-logo"><img src="images/repos-logo.png"></div>
+    <nav>
+    <ul id="navi" class="navi">
+      <li><a href="#concept">CONCEPT</li>
+      <li><a href="#style">STYLE</a></li>
+      <li><a href="#staff">STAFF</a></li>
+      <li><a href="#product">PRODUCT</a></li>
+      <li><a href="#news">NEWS</a></li>
+      <li><a href="#access">ACCESS</a></li>
+    </ul>
+    </nav>
+    
+    <!-- ボタン部分ここを後で追加するだけ-->
+    <div class="nav_btn" id="nav_btn">
+      <span class="hamburger_line hamburger_line1"></span>
+      <span class="hamburger_line hamburger_line2"></span>
+      <span class="hamburger_line hamburger_line3"></span>
+    </div>
+    <div class="nav_bg" id="nav_bg"></div>
+    <!-- /ボタン部分ここを後で追加するだけ-->
+      <!-- JS -->
+      <script src="js/jquery-1.11.3.min.js" charset="utf-8"></script>
+<script>
+  /* SP menu */
+  function toggleNav() {
+  var body = document.body;
+  var hamburger = document.getElementById('nav_btn');
+  var blackBg = document.getElementById('nav_bg');
+
+  hamburger.addEventListener('click', function() {
+    body.classList.toggle('nav_open'); //メニュークリックでnav-openというクラスがbodyに付与
+  });
+  blackBg.addEventListener('click', function() {
+    body.classList.remove('nav_open'); //もう一度クリックで解除
+  });
+  $('.navi a').on('click' , function(){
+  	if (window.innerWidth <= 768) {
+  		$('#nav_btn').click();
+  	}
+  });
+}
+toggleNav();
+</script>
+
+<script>
+     $(function(){
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 200){
+                $(this).css('opacity','1');
+                $(this).css('transform','translateY(0)');
+            }
+        });
+    });
+});
+	</script>
+<!-- /js -->
+
+<div class="navbar">
+	<ul class="navbar-contents">
+	  <li><a href="#concept" class="cp_link">CONCEPT</a></li>
+      <li><a href="#style" class="cp_link">STYLE</a></li>
+      <li><a href="#staff" class="cp_link">STAFF</a></li>
+      <li><a href="#product" class="cp_link">PRODUCT</a></li>
+      <li><a href="#news" class="cp_link">NEWS</a></li>
+      <li><a href="#access" class="cp_link">ACCESS</a></li>
+	</ul>
+</div>
+
+</div>
+
+<div class="top-image">
+
+<ul class="slider">
+<li><img src="images/top1.jpg" alt="スライド1"></li>
+<li><img src="images/top8.jpg" alt="スライド2"></li>
+<li><img src="images/top6.jpg" alt="スライド3"></li>
+</ul>
+
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+$('.slider').bxSlider();
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#slider').bxSlider({
+        auto: true, //自動スライドの設定
+        pager: false, //ページャーの表示設定
+        pause: 3000, //自動スライドの待ち時間
+        speed: 1000, //スライドにかかる時間
+        auto: true,
+        pause: 500,
+        speed: 65000
+    });
+});
+</script>
+
+<div class="top-image-pc"></div>
+
+<div id="concept" class="concept">
+	<div class="concept-head"><h2>CONCEPT</h2></div>
+	<div class="concept-left">
+		<img src="images/top1.jpg">
+	</div>
+	<div class="concept-right">
+	  <h2>CONCEPT</h2>
+	  <p>「repos(ルポ)」とは、フランス語で<br>
+      「安らぎ」という意味です。<br>
+	  日々の忙しさや疲れを癒す空間<br>
+	  でありたいという思いを込めたサロンです。</p>
+
+      <a href="#" class="btn-flat-simple"><i class="fa fa-caret-right"></i> MORE</a>
+    </div>
+</div>
+
+<div id="style" class="style">
+	<h2>STYLE</h2>
+	<div class="style-card-wrapper">
+		<div class="style-card">
+			<img src="images/style(2).png" class="fadein">
+			<p>stylist : Ryo Sato</p>
+			<p>style : Medium</p>
+			<p>グレイアッシュカラー</p>
+		</div>
+		<div class="style-card">
+			<img src="images/style(3) (1).jpg" class="fadein">
+			<p>stylist : Kyoko Furusawa</p>
+			<p>style : Medium</p>
+			<p>柔らかパーマ</p>
+		</div>
+		<div class="style-card">
+			<img src="images/image0.png" class="fadein">
+			<p>stylist : Yui Okada</p>
+			<p>style : Long</p>
+			<p>ヘアアレンジ</p>
+		</div>
+    </div>
+	<div class="style-more"><a href="#" class="btn-flat-simple"><i class="fa fa-caret-right"></i> MORE</a></div>
+</div>
+
+<div id="staff"class="staff">
+	<h2>STAFF</h2>
+	<p>最高の技術はもちろん、落ち着いた空間での<br>
+	最高の癒しも、ご提供しております。<br>
+	皆様の御来店を心より、お待ちしております。</p>
+	<div class="staff-card-wrapper">
+		<div class="staff-card-wrapper1">
+			<div class="staff-card">
+				<div class="staff-image"><img src="images/stylist1.png" class="fadein"></div>
+				<p class="name-a">Kyoko Furusawa</p>
+				<p class="name-ja">古澤　恭子</p>
+			</div>
+			<div class="staff-card">
+				<div class="staff-image"><img src="images/stylist2.png" class="fadein"></div>
+				<p class="name-a">Yui Okada</p>
+				<p class="name-ja">岡田　結衣</p>
+			</div>
+		</div>
+		<div class="staff-card-wrapper2">
+			<div class="staff-card">
+				<div class="staff-image"><img src="images/stylist3.png" class="fadein"></div>
+				<p class="name-a">Ryo Sato</p>
+				<p class="name-ja">佐藤　諒</p>
+			</div>
+			<div class="staff-card">
+				<div class="staff-image"><img src="images/stylist4.png" class="fadein"></div>
+				<p class="name-a">Kaori Takashima</p>
+				<p class="name-ja">高島　香織</p>
+			</div>
+		</div>
+	</div>
+	<div class="staff-more"><a href="#" class="btn-flat-simple">
+  <i class="fa fa-caret-right"></i> MORE</a></div>
+</div>
+
+<div id="product" class="product">
+	<div class="product-left">
+		<div class="box3">
+			<div class="box3-border">
+			<h2>PRODUCT</h2>
+			<br>
+			<br>
+			<p>日々の生活がより彩り豊かになるように、<br>
+			ひとりひとりのライフスタイルに合わせて、<br>
+			髪や肌をケア出来る、<br>
+			こだわりの商品を多数、取り揃えました。</p>
+			<img src="images/product2.jpg">
+			<a href="#" class="btn-flat-simple">
+            <i class="fa fa-caret-right"></i> MORE</a>
+			</div>
+		</div>
+</div>
+	<div class="product-right">
+	  <!--<img src="images/product.jpg">-->
+	</div>
+</div>
+
+<div id="news" class="news">
+	<div class="news-wrapper">
+		<h2>NEWS</h2>
+		<br>
+		<br>
+		<hr>
+		<div class="news-left">
+		  <div class="news-box">
+	        <p>お知らせ</p>
+	      </div>
+	    </div>
+	    <div class="news-right">
+	    	<p>2020.01.05</p>
+	    </div>
+	    <p class="news-text"><a href="#">新年あけましておめでとうございます</a></p>
+	    <hr>
+	    <div class="news-left">
+		  <div class="news-box">
+	        <p>お知らせ</p>
+	      </div>
+	    </div>
+	    <div class="news-right">
+	    	<p>2019.12.04</p>
+	    </div>
+	    <p class="news-text"><a href="#">年末年始営業のお知らせ</a></p>
+	    <hr>
+	    <div class="news-left">
+		  <div class="news-box">
+	        <p>お知らせ</p>
+	      </div>
+	    </div>
+	    <div class="news-right">
+	    	<p>2019.11.11</p>
+	    </div>
+	    <p class="news-text"><a href="#">新しいトリートメントが入荷しました！</a></p>
+	    <a href="#" class="btn-flat-simple">
+	    <i class="fa fa-caret-right"></i> MORE</a>
+    </div>
+</div>
+
+
+
+<div id="access" class="access">
+	<h2>ACCESS</h2>
+  	<div class="map">
+  		<div class="googlemap">
+  	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.6195457524404!2d135.49682231514282!3d34.66430998044387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e76d21f1d5e7%3A0xb322d068c3c59e9d!2zUEPjg53jg7zjg4jjgq3jg6Pjg6rjgqLjgqvjg6zjg4Pjgrgg44Gq44KT44Gw5qCh!5e0!3m2!1sja!2sjp!4v1581062005968!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+
+  <div class="map-content">
+  	<table class="table">
+		<tbody>
+		<tr>
+		<td>電話番号</td>
+		<td><a href="#">06-4397-6110</a></td>
+		</tr>
+		<tr>
+		<td>最寄駅</td>
+		<td><p>近鉄線 「大阪難波」駅6番出口　徒歩1分</p>
+            <p>南海電鉄 「なんば」駅北出口　徒歩2分        </p>
+            <p>地下鉄御堂筋線・千日前線「なんば」駅6番出口　徒歩1分        </p>
+            <p>地下鉄四つ橋線「なんば」駅31番出口　徒歩2分</p></td>
+		</tr>
+		<tr>
+		<td>住所</td>
+		<td>大阪府大阪市浪速区難波中１丁目１０−４ 南海野村ビル 11F</td>
+		</tr>
+		<tr>
+		<td>営業時間</td>
+		<td>
+		平日・土曜 10:00〜20:30<br />
+		日曜・祝日 10:00〜19:30
+		</td>
+		</tr>
+		<tr>
+		<td>定休日</td>
+		<td>火曜日</td>
+		</tr>
+		<tr>
+		<td>クレジットカード</td>
+		<td>可</td>
+		</tr>
+		<tr>
+		<td>駐車場</td>
+		<td>なし。近隣にコインパーキングあり。</td>
+		</tr>
+		</tbody>
+</table>
+</div>
+</div><!--mapここまで-->
+</div><!--accessここまで-->
+</div>
+
+</div>
+
+</body>
+</html>
